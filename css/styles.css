@@ -19,11 +19,12 @@ body {
   padding: 0;
   min-height: 100vh;
   color: #000f42;
+  letter-spacing: 1px;
 }
 main {
   padding-left: 1.25em;
   padding-right: 1.25em;
-  width: 75%;
+  max-width: 1120px;
   margin: 0 auto;
 }
 
@@ -42,7 +43,6 @@ h1 {
 
 p {
   margin-bottom: 1.875em;
-  font-size: 14px;
 }
 
 a {
@@ -53,4 +53,29 @@ a {
 
 .iframe {
   width: 100%;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+table {
+  margin-top: 1.875em;
+}
+th,
+td {
+  padding: 10px;
+}
+.warning-red {
+  color: red;
+}
+.flex {
+  display: flex;
+}
+.row {
+  flex-direction: row;
+}
+.col {
+  flex-direction: column;
 }
