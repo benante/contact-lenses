@@ -79,3 +79,6 @@ td {
 .col {
   flex-direction: column;
 }
+.table-wrapper {
+  overflow-x: auto;
+}
