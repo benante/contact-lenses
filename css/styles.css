@@ -1,16 +1,56 @@
+/* Container: Create a container with a width of 1120px to ensure a consistent layout across different devices.
+Typography: Pay attention to typography.
+-
+-
+-
+The page title should be in <h1> with a font size of 30px
+Subtitles in <h2> with a font size of 24px
+Use a clean and legible font.
+Content: To be added accurately with correct grammar, punctation and spelling as presented in the template
+below. Please be sure to include the correct internal links. */
+
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
 body {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
   min-height: 100vh;
+  color: #000f42;
+}
+main {
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+  width: 75%;
+  margin: 0 auto;
 }
 
 h1,
 h2,
 h3 {
   font-family: 'Dosis', Tahoma, Verdana, sans-serif;
+  color: #314e6e;
+}
+
+h1 {
+  font-size: 30px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+p {
+  margin-bottom: 1.875em;
+  font-size: 14px;
+}
+
+a {
+  color: #0137ef;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.iframe {
+  width: 100%;
 }
