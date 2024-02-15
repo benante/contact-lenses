@@ -20,6 +20,7 @@ body {
   min-height: 100vh;
   color: #000f42;
   letter-spacing: 1px;
+  font-size: 16px;
 }
 main {
   padding-left: 1.25em;
