@@ -83,10 +83,10 @@ th {
 }
 .flex {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 .gap {
-  gap: 2em;
+  gap: 0;
 }
 .table-wrapper {
   overflow-x: auto;
@@ -98,19 +98,29 @@ th {
   margin-bottom: 30px;
 }
 .img-no-stretch {
-  object-fit: none; /* img won't stretch despite being in flex container */
+  object-fit: contain;
+  /* img won't stretch despite being in flex container */
 }
 
-@media (max-width: 950px) {
+@media (min-width: 950px) {
   .flex {
-    flex-direction: column;
+    flex-direction: row;
   }
   .gap {
-    gap: 0;
+    gap: 2em;
   }
 }
-@media (max-width: 550px) {
+@media (min-width: 550px) {
   .img-no-stretch {
-    object-fit: contain;
+    object-fit: none;
+  }
+  .iframe {
+    height: 16em;
+  }
+}
+
+@media (min-width: 800px) {
+  .iframe {
+    height: 24em;
   }
 }
